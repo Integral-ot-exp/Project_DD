@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		/* создание кнопки меню для мобильной версии */
+		.square{
+			width: 35px;
+			height: 28px;
+			border: 1px solid black;
+			position: relative;
+			transition: 1s;
+			/* transform-origin: 50% 50%; */
+
+		}
+		.line{
+			width: 20px;
+			height: 2px;
+			background:  black;
+			position: absolute;
+			left: calc(50% - 10px);
+		}
+		.one{
+			top: 6px;
+		}
+		.two{
+			top: 12px;
+		}
+		.three{
+			top: 18px;
+		}
+		.square:hover .two{
+			display: none;
+			
+		}
+		.square:hover .one{
+			transform: rotate(45deg);
+			left: calc(50% - 10px);
+			top: calc(50%);
+
+		}
+		.square:hover .three{
+			transform: rotate(-45deg);
+			left: calc(50% - 10px);
+			top: calc(50%);
+
+		}
+	</style>
+</head>
+<body>
+		<div class="square">
+			 <div class="line one"></div>
+				<div class="line two"></div>
+				<div class="line three"></div>
+			
+		</div>
+	
+</body>
+</html>
